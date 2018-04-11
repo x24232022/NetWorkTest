@@ -57,6 +57,7 @@ public class RetrofitHelper {
 
 
 
+
     public static synchronized RetrofitHelper getInstances(Context context) {
         if (mHelper == null) {
             mHelper = new RetrofitHelper(context);

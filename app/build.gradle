@@ -24,35 +24,30 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
-
 
     //Rxjava2
+    //Retrofit2
+    //Okhttp-interceptor
+    //MosbyMvp库
+    //ButterKnife
 
+
+
+    compile'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'io.reactivex.rxjava2:rxjava:2.0.7'
     compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
-    //Retrofit2
-    compile'com.squareup.retrofit2:retrofit:2.2.0'
-    compile'com.squareup.retrofit2:converter-gson:2.2.0'
-    compile'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
-
-
-
-    //RxCache
-    compile "com.github.VictorAlbertos.RxCache:runtime:1.8.0-2.x"
-    compile 'com.github.VictorAlbertos.Jolyglot:gson:0.0.3'
-    //Okhttp-interceptor
-    compile 'com.squareup.okhttp3:okhttp:3..0'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.0.0'
     compile 'com.squareup.okhttp3:logging-interceptor:3.6.0'
-
-    //MosbyMvp库
     compile 'com.hannesdorfmann.mosby:mvp:2.0.1'
     compile 'com.hannesdorfmann.mosby:viewstate:2.0.1'
-    //ButterKnife
     compile 'com.jakewharton:butterknife:8.4.0'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
-
     compile 'com.google.code.gson:gson:2.6.2'
+
+    compile 'org.greenrobot:eventbus:3.1.1'
     testCompile 'junit:junit:4.12'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
 }
